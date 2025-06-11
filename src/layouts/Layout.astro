@@ -22,8 +22,8 @@ const siteTitle = title ? `${title} - ${database.Title}` : database.Title
 const siteDescription = description ? description : database.Description
 const siteURL = new URL(getNavLink(path), Astro.site).toString()
 const siteOGImage = new URL(
-  getStaticFilePath('/og-image.png'),
-  Astro.site
+  getStaticFilePath('/default-og-image.png'),
+    Astro.site
 )
 
 let coverImageURL: string
